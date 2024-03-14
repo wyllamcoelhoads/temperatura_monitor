@@ -1,16 +1,16 @@
 #!/bin/bash
-
+echo "Iniciando, aguarde!!!"
 # Diretório onde os arquivos de log serão armazenados
 LOG_DIR="/home/william-coelho/Documents/MTEMP"
 # Prefixo do nome do arquivo de log
-LOG_PREFIX="Temp"
+LOG_PREFIX="temperatura"
 # Extensão do arquivo de log
 LOG_EXTENSION="log"
 # Defina o intervalo em segundos (exemplo: 10 segundos)
 INTERVAL=10
 
 # Crie um nome de arquivo com timestamp
-TIMESTAMP=$(date "+%Y-%m-%d-%H:%M:%S")
+TIMESTAMP=$(date "+%Y%m%d%H%M%S")
 LOG_FILE="$LOG_DIR/$LOG_PREFIX-$TIMESTAMP.$LOG_EXTENSION"
 
 # Loop infinito para monitorar a temperatura
